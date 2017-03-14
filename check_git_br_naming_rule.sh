@@ -1,6 +1,6 @@
 #!/bin/bash
 
-branches=`git br -a`
+branches=`git br -r`
 
 for br in ${branches}
 do
