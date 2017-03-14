@@ -5,21 +5,17 @@ remote="origin"
 
 for br in ${branches}
 do
-  result="NG"
-
   # feature
   if [[ "${br}" =~ ^${remote}\/feature\/ ]];
   then
-    result="OK"
+    continue
   fi
 
   # release
   if [[ "${br}" =~ ^${remote}\/release\/ ]];
   then
-    result="OK"
+    continue
   fi
 
-  # result
-  echo "branch: ${br}"
-  echo "result: ${result}"
+  echo ${br}
 done
