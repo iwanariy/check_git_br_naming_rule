@@ -1,6 +1,6 @@
 #!/bin/bash
 
-branches=`git br -r`
+branches=`git branch -r`
 remote="origin"
 
 for br in ${branches}
